@@ -3,3 +3,6 @@ node_modules/
 *.3mf
 .DS_Store
 Thumbs.db
+
+# Instrucciones internas, no van al repositorio publico
+PUBLICAR.md
