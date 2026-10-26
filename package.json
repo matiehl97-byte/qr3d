@@ -1,0 +1,17 @@
+{
+  "name": "qr3d",
+  "version": "1.0.0",
+  "description": "Turn any text into a 3D-printable QR code. QR encoder written from scratch plus an STL writer. No dependencies, Node and browser.",
+  "main": "src/plate.js",
+  "files": ["src", "examples", "test.js", "README.md", "LICENSE"],
+  "scripts": {
+    "test": "node test.js",
+    "example": "node examples/make-stl.js \"https://qr3dcraft.com\" qr.stl --preview"
+  },
+  "bin": { "qr3d": "examples/make-stl.js" },
+  "keywords": ["qr", "qrcode", "3d-printing", "stl", "3mf", "mesh", "generator", "no-dependencies"],
+  "author": "Tiehl Roberto Matías",
+  "license": "MIT",
+  "homepage": "https://qr3dcraft.com",
+  "engines": { "node": ">=14" }
+}
