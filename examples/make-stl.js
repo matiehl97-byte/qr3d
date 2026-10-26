@@ -63,7 +63,7 @@ fs.writeFileSync(salida, Buffer.from(p.toSTL(texto.slice(0, 40))));
 
 var aviso = p.module < 0.8
   ? "  WARNING: under 0.8 mm a 0.4 mm nozzle cannot draw a square module.\n" +
-    "           Raise --size or shorten the text. https://qr3dcraft.com/tamano-minimo-qr-3d.html"
+    "           Raise --size or shorten the text. https://qr3dcraft.com/en/qr-code-minimum-size.html"
   : "";
 
 console.log([

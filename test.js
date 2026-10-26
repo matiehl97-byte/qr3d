@@ -23,6 +23,10 @@ function ok(nombre, cond, extra) {
 /* --------------------------------------------------------------- encoder */
 console.log("\nencoder");
 
+/* This URL is test DATA, not a link: its length is what makes the code come
+   out 33x33 at version 4, which the next three checks assert. Do not "update"
+   it to a newer address - a different length moves the version and the tests
+   fail for a reason that has nothing to do with the encoder. */
 var q = QRGen.make("https://qr3dcraft.com/tamano-minimo-qr-3d.html", "M");
 ok("33x33 for a 46-character URL", q.size === 33, "got " + q.size);
 ok("version 4", q.version === 4, "got " + q.version);
